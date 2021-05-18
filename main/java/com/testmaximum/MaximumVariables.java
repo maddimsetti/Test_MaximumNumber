@@ -7,41 +7,13 @@ package com.testmaximum;
 public class MaximumVariables {
 
     /**
-     * @description create Method for Finding the Maximum Number among Three Integers
+     * @description create Method for Finding the Maximum among Elements Using Generics
      * param: x,y,z are three Integers, Finding Maximum using "compareTo" Method
+     * param: x,y,z are three Floats, Finding Maximum using "compareTo" Method
+     * param: x,y,z are three Strings, Finding Maximum using "compareTo" Method
      */
-    public Integer maximumNUmber(Integer x, Integer y, Integer z) {
-        Integer maximum = x;               //Initializing maximumNumber
-        if (y.compareTo(maximum) > 0 ) {
-            maximum = y;
-        }
-        if (z.compareTo(maximum) > 0 ) {
-            maximum = z;
-        }
-        return maximum;
-    }
-
-    /**
-     * @description create Method for Finding the Maximum Number among Three Float Numbers
-     * param: x,y,z are three Float Numbers, Finding Maximum using "compareTo" Method
-     */
-    public Float maximumFloatNUmber(Float x, Float y, Float z) {
-        Float maximum = x;               //Initializing maximumNumber
-        if (y.compareTo(maximum) > 0 ) {
-            maximum = y;
-        }
-        if (z.compareTo(maximum) > 0 ) {
-            maximum = z;
-        }
-        return maximum;
-    }
-
-    /**
-     * @description create Method for Finding the Maximum Characters among Three Strings
-     * param: x,y,z are three Float Strings, Finding Maximum using "compareTo" Method
-     */
-    public String maximumString(String x, String y, String z) {
-        String maximum = x;               //Initializing maximum String
+    public static <M extends Comparable<M>>  M maximumElement(M x, M y, M z) {
+        M maximum = x;               //Initializing maximum String
         if (y.compareTo(maximum) > 0 ) {
             maximum = y;
         }
