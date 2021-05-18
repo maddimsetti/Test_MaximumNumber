@@ -37,6 +37,21 @@ public class MaximumVariables {
     }
 
     /**
+     * @description create Method for Finding the Maximum Characters among Three Strings
+     * param: x,y,z are three Float Strings, Finding Maximum using "compareTo" Method
+     */
+    public String maximumString(String x, String y, String z) {
+        String maximum = x;               //Initializing maximum String
+        if (y.compareTo(maximum) > 0 ) {
+            maximum = y;
+        }
+        if (z.compareTo(maximum) > 0 ) {
+            maximum = z;
+        }
+        return maximum;
+    }
+
+    /**
      * @description create Main Method for Welcoming the Test Maximum
      *
      */
