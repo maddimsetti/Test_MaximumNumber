@@ -13,7 +13,8 @@ public class TestMaximumVariables {
     /**
      * @description creating methods for Testing the Three Integers which is maximum
      * param1: Maximum Number at First Position should return the same Number
-     * param1: Maximum Number at Second Position should return the same Number
+     * param2: Maximum Number at Second Position should return the same Number
+     * param3: Maximum Number at Third Position should return the same Number
      */
     @Test
     public void givenThreeNumbers_1stPosition_shouldReturnMaximum() {
@@ -24,6 +25,11 @@ public class TestMaximumVariables {
     public void givenThreeNumbers_2ndPosition_shouldReturnMaximum() {
         Integer result = maximum.maximumNUmber(9,10,4);
         Assertions.assertEquals(10, result);
+    }
+    @Test
+    public void givenThreeNumbers_3rdPosition_shouldReturnMaximum() {
+        Integer result = maximum.maximumNUmber(9,10,15);
+        Assertions.assertEquals(15, result);
     }
 
 }
