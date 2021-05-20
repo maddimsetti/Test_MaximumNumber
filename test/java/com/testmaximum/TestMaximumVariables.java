@@ -18,8 +18,8 @@ public class TestMaximumVariables {
      */
     @Test
     public void givenThreeNumbers_1stPosition_shouldReturnMaximum() {
-        Integer result = maximum.maximumElement(9,3,4);                    //Testing for First Position
-        Assertions.assertEquals(9, result);
+        Integer result = maximum.maximumElement(9,3,4);
+        Assertions.assertEquals(9, result);            //Testing for First Position
     }
     @Test
     public void givenThreeNumbers_2ndPosition_shouldReturnMaximum() {
@@ -80,16 +80,16 @@ public class TestMaximumVariables {
      * @description create method for Testing the Three Elements(Integer,Float,String) which is maximum
      * param1: Given Three Integer Number and  should return the maximum Integer Number among the Three variables
      * param2: Given Three Float Number and should return the maximum Float Number among the Three Variables
-     * param3: Given Three Strings and should return the Maximum String among the Three Strings
-     */
+     * param3: Given Three String and should return the maximum String among the Three Variables
+c    */
     @Test
     public void givenElements_CheckGeneric_shouldReturnMaximum() {
         Integer result = maximum.maximumElement(9,8,15);
         Float result1 = maximum.maximumElement(2.2f,5.5f,4.4f);
-        String result2 = maximum.maximumElement("Peach","Apple","Banana");
-        Assertions.assertEquals(15,result);                    //Testing for Integer Variables
+        String result2 = maximum.maximumElement("Paris","America","Bhutan");
+        Assertions.assertEquals(15,result);                   //Testing for Integer Variables
         Assertions.assertEquals(5.5f,result1);                //Testing for Float Variables
-        Assertions.assertEquals("Peach", result2);            //Testing for String Variables
+        Assertions.assertEquals("Paris", result2);            //Testing for String Variables
     }
 
 }
