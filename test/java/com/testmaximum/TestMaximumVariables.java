@@ -18,17 +18,17 @@ public class TestMaximumVariables {
      */
     @Test
     public void givenThreeNumbers_1stPosition_shouldReturnMaximum() {
-        Integer result = maximum.maximumElement(9,3,4);
+        Integer result = maximum.maximumElement(9,3,4,2,1);
         Assertions.assertEquals(9, result);            //Testing for First Position
     }
     @Test
     public void givenThreeNumbers_2ndPosition_shouldReturnMaximum() {
-        Integer result = maximum.maximumElement(3,9,4);
+        Integer result = maximum.maximumElement(3,9,4,2,1);
         Assertions.assertEquals(9, result);            //Testing for second Position
     }
     @Test
     public void givenThreeNumbers_3rdPosition_shouldReturnMaximum() {
-        Integer result = maximum.maximumElement(3,4,9);
+        Integer result = maximum.maximumElement(3,4,9,2,1);
         Assertions.assertEquals(9, result);            //Testing for Third Position
     }
 
@@ -40,17 +40,17 @@ public class TestMaximumVariables {
      */
     @Test
     public void givenThreeFloatNumbers_1stPosition_shouldReturnMaximum() {
-        Float result = maximum.maximumElement(5.5f,3.3f,4.4f);
+        Float result = maximum.maximumElement(5.5f,3.3f,4.4f,2.2f,1.1f);
         Assertions.assertEquals(5.5f, result);            //Testing for First Position
     }
     @Test
     public void givenThreeFloatNumbers_2ndPosition_shouldReturnMaximum() {
-        Float result = maximum.maximumElement(3.3f,5.5f,4.4f);
+        Float result = maximum.maximumElement(3.3f,5.5f,4.4f,1.1f,2.2f);
         Assertions.assertEquals(5.5f, result);            //Testing for Second Position
     }
     @Test
     public void givenThreeFloatNumbers_3rdPosition_shouldReturnMaximum() {
-        Float result = maximum.maximumElement(3.3f,4.4f,5.5f);
+        Float result = maximum.maximumElement(3.3f,4.4f,5.5f,2.1f,1.8f);
         Assertions.assertEquals(5.5f, result);          //Testing for Third Position
     }
 
@@ -62,17 +62,17 @@ public class TestMaximumVariables {
      */
     @Test
     public void givenStrings_1stPosition_shouldReturnMaximum() {
-        String result = maximum.maximumElement("Peach","Banana","Apple");
+        String result = maximum.maximumElement("Peach","Banana","Apple","Cucumber","Mango");
         Assertions.assertEquals("Peach", result);            //Testing for First Position
     }
     @Test
     public void givenStrings_2ndPosition_shouldReturnMaximum() {
-        String result = maximum.maximumElement("Banana","Peach","Apple");
+        String result = maximum.maximumElement("Banana","Peach","Apple","Mango","Cucumber");
         Assertions.assertEquals("Peach", result);            //Testing for Second Position
     }
     @Test
     public void givenStrings_3rdPosition_shouldReturnMaximum() {
-        String result = maximum.maximumElement("Apple","Banana","Peach");
+        String result = maximum.maximumElement("Apple","Banana","Peach","Cucumber","Mango");
         Assertions.assertEquals("Peach", result);            //Testing for Third Position
     }
 
@@ -84,11 +84,11 @@ public class TestMaximumVariables {
 c    */
     @Test
     public void givenElements_CheckGeneric_shouldReturnMaximum() {
-        Integer result = maximum.maximumElement(9,8,15);
-        Float result1 = maximum.maximumElement(2.2f,5.5f,4.4f);
-        String result2 = maximum.maximumElement("Paris","America","Bhutan");
-        Assertions.assertEquals(15,result);                   //Testing for Integer Variables
-        Assertions.assertEquals(5.5f,result1);                //Testing for Float Variables
+        Integer result = maximum.maximumElement(9,8,15,21,14);
+        Float result1 = maximum.maximumElement(2.2f,5.5f,4.4f,15.4f,20.45f);
+        String result2 = maximum.maximumElement("Paris","America","Bhutan","India","Australia");
+        Assertions.assertEquals(21,result);                   //Testing for Integer Variables
+        Assertions.assertEquals(20.45f,result1);                //Testing for Float Variables
         Assertions.assertEquals("Paris", result2);            //Testing for String Variables
     }
 
