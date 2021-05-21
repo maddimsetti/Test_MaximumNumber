@@ -54,6 +54,7 @@ public class MaximumVariables<M extends Comparable<M>> {
         if (l.compareTo(maximum) > 0) {
             maximum = l;             //l is largest now
         }
+        printMax(x, y, z, k, l, maximum);
         return maximum;              //Returning the largest Element
     }
 
@@ -72,6 +73,10 @@ public class MaximumVariables<M extends Comparable<M>> {
             maximum = l;                  //l is largest now
         }
         return maximum;                   //Returning the largest Element
+    }
+
+    public static <M> void printMax (M x,M y, M z,M k,M l, M maximum) {
+        System.out.printf("Maximum of %s, %s, %s,%s and %s is %s\n" ,x,y,z,k,l,maximum);
     }
 
 
